@@ -17,6 +17,12 @@ const setupInput = (conn) => {
       conn.write("Move: down");
     } else if (key === 'd') {
       conn.write("Move: right");
+    } else if (key === 't') {
+      conn.write("Say: my food");
+    } else if (key === 'z') {
+      conn.write("Say: gud pizza");
+    } else if (key === 'j') {
+      conn.write("Say: want wine");
     }
   });
   return stdin;
